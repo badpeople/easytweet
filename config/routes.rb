@@ -1,7 +1,11 @@
-Twittertool2::Application.routes.draw do
+Easytweet::Application.routes.draw do
 
-  root :to => "home#index"
+  match 'login' => "sessions#new"
+  match 'logout' => "sessions#destroy"
+  match 'oauth_callback' => "sessions#oauth_callback"
 
+  resources :sessions
+  root :to=> "home#index"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

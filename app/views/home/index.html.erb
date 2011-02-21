@@ -1,0 +1,8 @@
+<% if !logged_in? %>
+    Please  <%= link_to "login",:controller=>"sessions",:action=>"new" %>
+<% else %>
+    Welcome <%= current_user.login %><br/>
+
+    Your twitter id is <input type="text" value="<%=current_user.twitter_id %>"></br>
+    Your auth key is <input size=60 type="text" value="<%=current_user.access_token %>">
+<% end %>

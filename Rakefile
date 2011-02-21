@@ -4,4 +4,4 @@
 require File.expand_path('../config/application', __FILE__)
 require 'rake'
 
-Twittertool2::Application.load_tasks
+Easytweet::Application.load_tasks

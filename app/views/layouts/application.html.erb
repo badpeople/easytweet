@@ -7,7 +7,12 @@
   <%= csrf_meta_tag %>
 </head>
 <body>
-
+<div style="float:right;">
+  <% if logged_in? %>
+      <%= link_to "logout" ,:controller=>"sessions",:action=>"destroy" %>        
+  <% else %>
+  <% end %>
+</div>
 <%= yield %>
 
 </body>
