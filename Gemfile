@@ -11,6 +11,8 @@ gem 'oauth'
 gem 'json'
 gem 'rspec'
 gem 'rspec-rails'
+gem "nifty-generators", :group => :development
+gem 'heroku'
 # Use unicorn as the web server
 # gem 'unicorn'
 

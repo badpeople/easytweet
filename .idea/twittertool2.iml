@@ -18,7 +18,19 @@
     </requirement>
     <requirement>
       <requirement>
+        <dependency name="heroku" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
+      </requirement>
+      <source from="Gemfile" />
+    </requirement>
+    <requirement>
+      <requirement>
         <dependency name="json" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
+      </requirement>
+      <source from="Gemfile" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="nifty-generators" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
       </requirement>
       <source from="Gemfile" />
     </requirement>
@@ -73,28 +85,33 @@
     <orderEntry type="library" scope="PROVIDED" name="[gem] json (v1.4.6, /home/paul/.rvm/gems/ruby-1.8.7-p330/gems/json-1.4.6)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] ezcrypto (v0.7.2, /home/paul/.rvm/gems/ruby-1.8.7-p330/gems/ezcrypto-0.7.2)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] oauth (v0.4.4, /home/paul/.rvm/gems/ruby-1.8.7-p330/gems/oauth-0.4.4)" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="[gem] rspec-mocks (v2.4.0, /home/paul/.rvm/gems/ruby-1.8.7-p330/gems/rspec-mocks-2.4.0)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] rspec-expectations (v2.5.0, /home/paul/.rvm/gems/ruby-1.8.7-p330/gems/rspec-expectations-2.5.0)" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="[gem] diff-lcs (v1.1.2, /home/paul/.rvm/gems/ruby-1.8.7-p330/gems/diff-lcs-1.1.2)" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="[gem] rspec-core (v2.4.0, /home/paul/.rvm/gems/ruby-1.8.7-p330/gems/rspec-core-2.4.0)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] rspec-rails (v2.4.1, /home/paul/.rvm/gems/ruby-1.8.7-p330/gems/rspec-rails-2.4.1)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] rspec (v2.4.0, /home/paul/.rvm/gems/ruby-1.8.7-p330/gems/rspec-2.4.0)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] rspec (v2.5.0, /home/paul/.rvm/gems/ruby-1.8.7-p330/gems/rspec-2.5.0)" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="[gem] rspec-expectations (v2.4.0, /home/paul/.rvm/gems/ruby-1.8.7-p330/gems/rspec-expectations-2.4.0)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] rspec-core (v2.5.1, /home/paul/.rvm/gems/ruby-1.8.7-p330/gems/rspec-core-2.5.1)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] rspec-mocks (v2.5.0, /home/paul/.rvm/gems/ruby-1.8.7-p330/gems/rspec-mocks-2.5.0)" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="[gem] rake (v0.8.7, /home/paul/.rvm/gems/ruby-1.8.7-p330@global/gems/rake-0.8.7)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] nifty-generators (v0.4.3, /home/paul/.rvm/gems/ruby-1.8.7-p330/gems/nifty-generators-0.4.3)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] mime-types (v1.16, /home/paul/.rvm/gems/ruby-1.8.7-p330/gems/mime-types-1.16)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] rake (v0.8.7, /home/paul/.rvm/gems/ruby-1.8.7-p330@global/gems/rake-0.8.7)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] rest-client (v1.6.1, /home/paul/.rvm/gems/ruby-1.8.7-p330/gems/rest-client-1.6.1)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] launchy (v0.3.7, /home/paul/.rvm/gems/ruby-1.8.7-p330/gems/launchy-0.3.7)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] heroku (v1.17.5, /home/paul/.rvm/gems/ruby-1.8.7-p330/gems/heroku-1.17.5)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] configuration (v1.2.0, /home/paul/.rvm/gems/ruby-1.8.7-p330/gems/configuration-1.2.0)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] rspec-mocks (v2.4.0, /home/paul/.rvm/gems/ruby-1.8.7-p330/gems/rspec-mocks-2.4.0)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] tzinfo (v0.3.24, /home/paul/.rvm/gems/ruby-1.8.7-p330/gems/tzinfo-0.3.24)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] arel (v2.0.8, /home/paul/.rvm/gems/ruby-1.8.7-p330/gems/arel-2.0.8)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] diff-lcs (v1.1.2, /home/paul/.rvm/gems/ruby-1.8.7-p330/gems/diff-lcs-1.1.2)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] polyglot (v0.3.1, /home/paul/.rvm/gems/ruby-1.8.7-p330/gems/polyglot-0.3.1)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] i18n (v0.5.0, /home/paul/.rvm/gems/ruby-1.8.7-p330/gems/i18n-0.5.0)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] treetop (v1.4.9, /home/paul/.rvm/gems/ruby-1.8.7-p330/gems/treetop-1.4.9)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] rack-mount (v0.6.13, /home/paul/.rvm/gems/ruby-1.8.7-p330/gems/rack-mount-0.6.13)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] rspec-expectations (v2.4.0, /home/paul/.rvm/gems/ruby-1.8.7-p330/gems/rspec-expectations-2.4.0)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] rack (v1.2.1, /home/paul/.rvm/gems/ruby-1.8.7-p330/gems/rack-1.2.1)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] abstract (v1.0.0, /home/paul/.rvm/gems/ruby-1.8.7-p330/gems/abstract-1.0.0)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] mail (v2.2.15, /home/paul/.rvm/gems/ruby-1.8.7-p330/gems/mail-2.2.15)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] builder (v2.1.2, /home/paul/.rvm/gems/ruby-1.8.7-p330/gems/builder-2.1.2)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] rspec-core (v2.4.0, /home/paul/.rvm/gems/ruby-1.8.7-p330/gems/rspec-core-2.4.0)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] erubis (v2.6.6, /home/paul/.rvm/gems/ruby-1.8.7-p330/gems/erubis-2.6.6)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] thor (v0.14.6, /home/paul/.rvm/gems/ruby-1.8.7-p330/gems/thor-0.14.6)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] rack-test (v0.5.7, /home/paul/.rvm/gems/ruby-1.8.7-p330/gems/rack-test-0.5.7)" level="application" />

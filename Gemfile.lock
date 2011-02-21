@@ -42,6 +42,7 @@ GEM
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
     mime-types (1.16)
+    nifty-generators (0.4.3)
     oauth (0.4.4)
     pg (0.10.1)
     polyglot (0.3.1)
@@ -88,6 +89,7 @@ PLATFORMS
 DEPENDENCIES
   ezcrypto
   json
+  nifty-generators
   oauth
   pg
   rails (= 3.0.3)

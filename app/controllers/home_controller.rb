@@ -1,5 +1,5 @@
 class HomeController < ApplicationController
   def index
-    this = "that"
+    @app_config = APP_CONFIG
   end
 end

@@ -1,8 +1,24 @@
 <% if !logged_in? %>
     Please  <%= link_to "login",:controller=>"sessions",:action=>"new" %>
 <% else %>
-    Welcome <%= current_user.login %><br/>
+    Welcome <span style="font-weight:bold;"><%= current_user.login %></span><br/>
 
-    Your twitter id is <input type="text" value="<%=current_user.twitter_id %>"></br>
-    Your auth key is <input size=60 type="text" value="<%=current_user.access_token %>">
+    Your twitter id (<span class="emph">X_TWITTER_ID</span>) is <input type="text" value="<%=current_user.twitter_id %>"></br>
+    Your auth key (<span class="emph">X_TWITTER_TOKEN)</span> is <input size=60 type="text" value="<%=current_user.access_token %>">
+
+    <div class="only-header">How-To</div>
+    <div class="text-content">
+      POST to "http://<%= @app_config[:domain] %>/api/status" with the status you want tweeted and the X_TWITTER_ID and X_TWITTER_TOKEN above as two of
+      the headers of the request.  You will receive a JSON response back with the status and the url of the status if successful or an error message.
+      <br />
+      <br />
+      to try it out with curl
+      <br />
+      <br />
+      <samp>curl --header "X_TWITTER_TOKEN: <%=current_user.access_token %>" --header "X_TWITTER_ID: <%=current_user.twitter_id %>" -d "here is the sweet message!!" http://<%= @app_config[:domain] %>/api/status</samp>
+
+      
+
+
+    </div>
 <% end %>

@@ -1,0 +1,8 @@
+development:
+  domain: 127.0.0.1:3000
+
+test:
+  domain: test.host
+
+production:
+  domain: easytweet.heroku.com
