@@ -1,5 +1,5 @@
 class ApiController < ApplicationController
-  def tweet
+  def status
     # check for vailidity
     begin
       @app_config = APP_CONFIG
