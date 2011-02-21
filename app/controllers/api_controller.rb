@@ -4,6 +4,7 @@ class ApiController < ApplicationController
     begin
       @app_config = APP_CONFIG
       if request.env['HTTP_X_TWITTER_ID'].nil? || request.env['HTTP_X_TWITTER_TOKEN'].nil?
+        Rails.logger.error("headers not found:  here is what was in request.env #{request.env.to_yaml}")
         render :text=>{:status=>"error", :message=>"you must include X_TWITTER_ID and X_TWITTER_TOKEN in your HTTP headers"}.to_json, :status=>403
         return
       end
