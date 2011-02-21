@@ -9,7 +9,8 @@ gem 'pg'
 gem 'ezcrypto'
 gem 'oauth'
 gem 'json'
-
+gem 'rspec'
+gem 'rspec-rails'
 # Use unicorn as the web server
 # gem 'unicorn'
 
