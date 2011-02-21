@@ -8,14 +8,14 @@
 
     <div class="only-header">How-To</div>
     <div class="text-content">
-      POST to "http://<%= @app_config[:domain] %>/api/status" with the status you want tweeted and the X_TWITTER_ID and X_TWITTER_TOKEN above as two of
+      POST to "http://<%= @app_config[:domain] %>/api/status" with the status you want tweeted and the X-TWITTER-ID and X-TWITTER-TOKEN above as two of
       the headers of the request.  You will receive a JSON response back with the status and the url of the status if successful or an error message.
       <br />
       <br />
       to try it out with curl
       <br />
       <br />
-      <samp>curl --header "X_TWITTER_TOKEN: <%=current_user.access_token %>" --header "X_TWITTER_ID: <%=current_user.twitter_id %>" -d "here is the sweet message!!" http://<%= @app_config[:domain] %>/api/status</samp>
+      <samp>curl --header "X-TWITTER-TOKEN: <%=current_user.access_token %>" --header "X-TWITTER-ID: <%=current_user.twitter_id %>" -d "here is the sweet message!!" http://<%= @app_config[:domain] %>/api/status</samp>
 
       
 
