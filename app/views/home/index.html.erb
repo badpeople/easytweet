@@ -15,7 +15,7 @@
       to try it out with curl
       <br />
       <br />
-      <textarea cols=120 rows="5">curl --header "X-TWITTER-TOKEN: <%=current_user.access_token %>" --header "X-TWITTER-ID: <%=current_user.twitter_id %>" -d "here is the sweet message!!" http://<%= @app_config[:domain] %>/api/status</textarea>
+      <textarea cols=120 rows="5">curl --header "X-TWITTER-TOKEN: <%=current_user.access_token %>" --header "X-TWITTER-ID: <%=current_user.twitter_id %>" -d "here is the sweet message" http://<%= @app_config[:domain] %>/api/status</textarea>
 
       
 
