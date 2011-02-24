@@ -1,7 +1,14 @@
 <% if !logged_in? %>
-    Please  <%= link_to "login",:controller=>"sessions",:action=>"new" %>
+    <br/>
+    <br/>
+    Easy Tweet is an OAuth simplifier for sending tweets.  It allows you to send tweets from one account
+    using only an HTTP POST.  Click LOGIN link below to auth with twitter.  This will give us read and write access to tweet from
+    your account.  Further instructions on the otherside.
+    <br/>
+    <br/>
+    <%= link_to "LOGIN",:controller=>"sessions",:action=>"new" %>
 <% else %>
-    Welcome <span style="font-weight:bold;"><%= current_user.login %></span><br/>
+    Welcome, <span style="font-weight:bold;"><%= current_user.login %></span><br/>
 
     Your twitter id (<span class="emph">X_TWITTER_ID</span>) is <input type="text" value="<%=current_user.twitter_id %>"></br>
     Your auth key (<span class="emph">X_TWITTER_TOKEN)</span> is <input size=60 type="text" value="<%=current_user.access_token %>">
@@ -9,7 +16,7 @@
     <div class="only-header">How-To</div>
     <div class="text-content">
       POST to "http://<%= @app_config[:domain] %>/api/status" with the status you want tweeted and the X-TWITTER-ID and X-TWITTER-TOKEN above as two of
-      the headers of the request.  You will receive a JSON response back with the status and the url of the status if successful or an error message.
+      the headers of the request.  You will receive a JSON response back with the status and the url of the status if successful or an error message otherwise.
       <br />
       <br />
       to try it out with curl
