@@ -5,4 +5,4 @@ test:
   domain: test.host
 
 production:
-  domain: easytweet.heroku.com
+  domain: easytweet.me
